@@ -110,7 +110,7 @@ public class Heap<T extends Comparable<T>>
         }
     }
 
-    // This method returns the largest item in the heap
+    // This method returns the largest item in the heap that is 0th indexed value cause its max heap
     public T get()
     {
         return this.data.get(0);
