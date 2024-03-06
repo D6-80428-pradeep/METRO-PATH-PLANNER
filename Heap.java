@@ -4,7 +4,7 @@ import java.util.HashMap;
 //class represents a generic Heap data structure that can hold any type T that extends Comparable
 public class Heap<T extends Comparable<T>>
 {
-    // This ArrayList holds the data in the heap
+    // This List holds the data in the heap
     ArrayList<T> data = new ArrayList<>();
     // This HashMap maps each item in the heap to its index in the ArrayList
     HashMap<T, Integer> map = new HashMap<>();
@@ -23,6 +23,7 @@ public class Heap<T extends Comparable<T>>
     // This method restores the heap property by moving an item up the heap until it's in the correct position
     private void upheapify(int ci)
     {
+
         // Calculate the index of the parent item
         int pi = (ci - 1) / 2;
         // If the child item is larger than the parent item, swap them and continue up the heap
@@ -101,7 +102,6 @@ public class Heap<T extends Comparable<T>>
         {
             mini = rci;
         }
-
         // If the smallest item is not the parent, swap the parent with the smallest and continue down the heap
         if (mini != pi)
         {
@@ -119,6 +119,7 @@ public class Heap<T extends Comparable<T>>
     // This method compares two items and returns a positive number if the first item is larger, 0 if they're equal, and a negative number if the second item is larger
     public int isLarger(T t, T o)
     {
+
         return t.compareTo(o);
     }
 
