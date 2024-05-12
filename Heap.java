@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.HashMap;
-
 //class represents a generic Heap data structure that can hold any type T that extends Comparable
 public class Heap<T extends Comparable<T>>
 {
