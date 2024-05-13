@@ -18,7 +18,6 @@ public class Heap<T extends Comparable<T>>
         // Restore the heap property by moving the added item to its correct position
         upheapify(data.size() - 1);
     }
-
     // This method restores the heap property by moving an item up the heap until it's in the correct position
     private void upheapify(int ci)
     {
