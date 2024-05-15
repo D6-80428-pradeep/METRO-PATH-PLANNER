@@ -120,7 +120,6 @@ public class Heap<T extends Comparable<T>>
 
         return t.compareTo(o);
     }
-
     // This method updates the position of an item in the heap after its priority has been changed
     public void updatePriority(T pair)
     {
